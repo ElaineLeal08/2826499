@@ -55,6 +55,45 @@ public class App {
         System.out.println("Ingrese número:");
         numero1 = scr.nextDouble();
         System.out.println("El resultado es : " + data.elevarcuadrado(numero1));
-        
+
+        System.out.println("------------------------------");
+        System.out.println("4. Convertir euros a dólares");
+        System.out.println("Ingrese valor EUR");
+        numero2 = scr.nextDouble();
+        System.out.println("El valor en USD es: " + data.convertir(numero2));
+
+        System.out.println("------------------------------");
+        System.out.println("5. Hallar el área y perimetro de un cuadrado");
+        System.out.println("Ingrese el lado del cuadrado: ");
+        numero3  = scr.nextDouble();
+        System.out.println("El área del  cuadrado  es: " + data.areacuadrado(numero3));
+        System.out.println("El perimetro del  cuadrado  es: " + data.perimetrocuadrado(numero3));
+
+        System.out.println("------------------------------");
+        System.out.println("6. Hallar el área y volúmen de un cilindro");
+        System.out.println("Ingrese el valor del radio:");
+        numero1 = scr.nextDouble();
+        System.out.println("Ingrese el valor de la altura:");
+        numero2 = scr.nextDouble();
+        System.out.println("El area del cilindro es: " + data.areacilindro(numero1, numero2));
+        System.out.println("El volumen del cilindro es: " + data.volumencilindro(numero1, numero2));
+
+        System.out.println("------------------------------");
+        System.out.println("7. Hallar el radio, área y longitud de una circunferencia");
+        System.out.println("Ingrese el valor del diametro:");
+        numero3 = scr.nextDouble();
+        System.out.println("El radio de la circunferencia es: " + data.radiocircunferencia(numero3));
+        System.out.println("El area de la circunferencia es: " + data.areacircunferencia(numero3));
+        System.out.println("La longitud de la circunferencia es: " + data.longitudcircunferencia(numero3));
+
+        System.out.println("------------------------------");
+        System.out.println("8. Calcular promedio");
+        System.out.println("Ingrese primer número:");
+        numero1 = scr.nextDouble();
+        System.out.println("Ingrese segundo número:");
+        numero2 = scr.nextDouble();
+        System.out.println("Ingrese tercer número:");
+        numero3 = scr.nextDouble();
+        System.out.println("El promedio es: " + data.promedio(numero1, numero2, numero3));
     }
 }
